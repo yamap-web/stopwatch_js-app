@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ストップウォッチアプリ</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/reset.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <div class="header"></div>
+    <div
+      class="container d-flex flex-column align-items-center mx-auto m-5 p-5 bg-light shadow"
+      style="width: 60rem"
+    >
+      <h1 class="text-center p-5 fw-bold">ストップウォッチアプリ</h1>
+      <div class="card" style="width: 28rem">
+        <div class="card-body p-5">
+          <h2 id="timer" class="text-center fw-bold">00:00.000</h2>
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button id="start" type="button" class="btn btn-primary text-white">
+              <span>Start</span>
+            </button>
+            <button
+              id="stop"
+              type="button"
+              class="btn btn-secondary text-white"
+            >
+              <span>Stop</span>
+            </button>
+            <button id="reset" type="button" class="btn btn-danger text-white">
+              <span>Reset</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
